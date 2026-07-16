@@ -1,0 +1,19 @@
+# ============================================
+# GVMCH AI PPT Maker v2 - Minimal Dependencies
+# Only the direct packages needed (pip will auto-install sub-dependencies)
+# ============================================
+
+# Core Web Framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# AI/LLM Integration
+openai==2.45.0
+
+# Environment Management
+python-dotenv==1.0.1
+
+# PowerPoint Generation
+python-pptx==1.0.2
+lxml==6.1.1
+pillow==12.3.0

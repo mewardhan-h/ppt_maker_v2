@@ -93,8 +93,12 @@ python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# Install dependencies
+# Install dependencies (choose one):
+# Option 1: All dependencies with exact versions (recommended for production)
 pip install -r requirements.txt
+
+# Option 2: Minimal dependencies (pip auto-installs sub-dependencies)
+pip install -r requirements-minimal.txt
 
 # Create .env file
 echo NVIDIA_API_KEY=your_api_key_here > .env

@@ -1,9 +1,52 @@
-python-pptx==1.0.2
-lxml==6.1.1
-pillow==12.3.0
-typing_extensions==4.16.0
-# google-genai==0.8.3
-python-dotenv==1.0.1
+# ============================================
+# GVMCH AI PPT Maker v2 - Backend Dependencies
+# ============================================
+
+# Core Web Framework
 Flask==3.0.0
 flask-cors==4.0.0
-openai>=1.0.0
+Werkzeug==3.1.8
+click==8.4.2
+blinker==1.9.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+
+# AI/LLM Integration
+openai==2.45.0                 # NVIDIA LLM API client
+httpx==0.28.1                  # HTTP client for openai
+httpcore==1.0.9
+h11==0.16.0
+anyio==4.14.2
+sniffio==1.3.1
+certifi==2026.6.17
+idna==3.18
+
+# Data Validation
+pydantic==2.13.4
+pydantic_core==2.46.4
+annotated-types==0.7.0
+typing_extensions==4.16.0
+
+# Environment Management
+python-dotenv==1.0.1
+
+# PowerPoint Generation
+python-pptx==1.0.2
+lxml==6.1.1                    # XML processing for python-pptx
+pillow==12.3.0                 # Image processing for logos
+XlsxWriter==3.2.9              # Required by python-pptx
+
+# HTTP Requests
+requests==2.34.2
+urllib3==2.7.0
+charset-normalizer==3.4.9
+
+# Utilities
+distro==1.9.0
+jiter==0.16.0
+colorama==0.4.6
+
+# Note: The following are installed but not directly used in current version
+# google-genai==2.11.0 (previously used for Gemini, now using NVIDIA only)
+# If you need Gemini support in future, uncomment above line

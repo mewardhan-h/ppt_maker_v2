@@ -36,6 +36,7 @@ npm-debug.log*
 *.txt
 !README.md
 !requirements.txt
+!requirements-minimal.txt
 !CHANGES_SUMMARY.md
 
 # Package lock files (optional - keep if you want reproducible builds)
