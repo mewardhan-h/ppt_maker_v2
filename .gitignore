@@ -1,0 +1,42 @@
+# Environment variables (CONTAINS API KEYS - DO NOT COMMIT!)
+backend/.env
+.env
+
+# Python virtual environment
+test/
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Generated files
+backend/presentation.pptx
+backend/stage1_raw_content.txt
+backend/basic_text_converted.txt
+backend/students_data.json
+
+# Node modules (frontend)
+frontend/student-form-app/node_modules/
+frontend/student-form-app/dist/
+frontend/student-form-app/.vite/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test files and outputs
+*.pptx
+*.txt
+!README.md
+!requirements.txt
+!CHANGES_SUMMARY.md
+
+# Package lock files (optional - keep if you want reproducible builds)
+# frontend/student-form-app/package-lock.json
