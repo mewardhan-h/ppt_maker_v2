@@ -77,7 +77,7 @@ def parse_inline_bold(text: str) -> list[tuple]:
     return [(part, i % 2 == 1) for i, part in enumerate(parts) if part]
 
 
-def set_paragraph_runs(p, bullet_text: str, font_size_pt: int = 24):
+def set_paragraph_runs(p, bullet_text: str, font_size_pt: int = 21):
     """Clear existing runs and add new ones with inline bold support."""
     p_xml = p._p
     for r in p_xml.findall(qn('a:r')):

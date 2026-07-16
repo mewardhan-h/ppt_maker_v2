@@ -59,7 +59,7 @@ STRICT FORMATTING RULES:
 SLIDE ORGANIZATION RULES:
 - First slide: Use the main topic as the title with introductory content
 - Each major section/topic = ONE new slide
-- Each slide should have 3-6 bullet points MAXIMUM (NOT MORE THAN 6)
+- Each slide should have **MAXIMUM 5 bullet points** (NOT MORE THAN 5)
 - If a topic has too much content, split it into multiple slides (e.g., "Topic - Part 1", "Topic - Part 2")
 - Keep bullet points concise (1-2 lines each)
 - Group related information together
