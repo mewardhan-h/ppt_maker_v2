@@ -1,5 +1,6 @@
 # Environment variables (CONTAINS API KEYS - DO NOT COMMIT!)
 backend/.env
+frontend/student-form-app/.env
 .env
 
 # Python virtual environment
