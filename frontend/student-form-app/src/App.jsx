@@ -6,6 +6,9 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+  // Get backend URL from environment variable
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
   // State to store form data
   const [formData, setFormData] = useState({
     topic: '',
@@ -49,7 +52,7 @@ function App() {
       console.log('📤 Sending to backend:', formData);
 
       // Send JSON to backend
-      const response = await fetch('http://localhost:3000/api/submit-student', {
+      const response = await fetch(`${API_URL}/api/submit-student`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Tell backend we're sending JSON
@@ -118,7 +121,7 @@ function App() {
 
           <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '20px' }}>
             <button
-              onClick={() => window.open('http://localhost:3000/api/download-ppt', '_blank')}
+              onClick={() => window.open(`${API_URL}/api/download-ppt`, '_blank')}
               className="btn-primary"
               style={{
                 width: 'auto',
