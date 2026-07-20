@@ -194,4 +194,4 @@ if __name__ == '__main__':
     print('\n💾 Data stored in: students_data.json')
     print('Press Ctrl+C to stop\n')
     
-    app.run(host='localhost', port=3000, debug=True)
+    app.run(host='0.0.0.0', port=3000, debug=False)
